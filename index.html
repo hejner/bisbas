@@ -8,19 +8,43 @@
     <style>
         body {
             background-color: #f7f1eb;
-            margin: 0 auto;
-            width: 500px;
             font-size: 40px;
             font-weight: bold;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            position: relative;
+            background-image: url(/top.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-top: 10px;
+        }
+
+        header #banner {
+            position: relative;
+        }
+
+        header #logo {
+            position: absolute;
+            width: 400px;
+            left: calc(50% - 200px);
+            z-index: 50;
         }
 
         img {
             max-width: 100%;
         }
 
+        #StatusText {
+            width: 500px;
+            margin: 0 auto;
+        }
+
         #links {
             width: 500px;
+            margin: 0 auto;
         }
 
         #links a {
@@ -39,11 +63,10 @@
 
 <body>
     <header>
-        <img src="/top.jpg" id="banner" alt="banner" />
         <img src="/logo.png" id="logo" alt="logo" />
     </header>
 
-    <p>Butikken er lukket, men du kan følge med på Facebook og Instagram</p>
+    <p id="StatusText">Butikken er lukket, men du kan følge med på Facebook og Instagram</p>
     <div id="links">
         <a href="https://www.facebook.com/bisbas.dk"><img id="facebook" src="/facebook.png" alt="facebook" /></a>
         <a href="https://www.instagram.com/bissen_og_bassen/"><img src="/instagram.png" alt="instagram" /></a>
