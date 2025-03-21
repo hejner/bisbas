@@ -10,6 +10,7 @@
         body {
             background-color: #f7f1eb;
             font-size: 40px;
+            margin: 0;
             font-weight: bold;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -42,9 +43,12 @@
             margin: 0 auto;
         }
 
-        #links a {
-            display: block;
-            float: left;
+        /* only float when the viewport is wide enough */
+        @media (min-width: 500px) {
+            #links a {
+                display: block;
+                float: left;
+            }
         }
 
         #links a img {
@@ -64,7 +68,8 @@
     <p id="StatusText">Butikken er lukket, men du kan følge med på Facebook og Instagram</p>
     <div id="links">
         <a href="https://www.facebook.com/bisbas.dk" target="_blank"><img src="/facebook.png" alt="facebook" /></a>
-        <a href="https://www.instagram.com/bissen_og_bassen/" target="_blank"><img src="/instagram.png" alt="instagram" /></a>
+        <a href="https://www.instagram.com/bissen_og_bassen/" target="_blank"><img src="/instagram.png"
+                alt="instagram" /></a>
     </div>
 </body>
 
